@@ -124,45 +124,52 @@ header h1 {
 
 .action-buttons {
     display: flex;
-    gap: 12px;
+    flex-direction: row;
+    gap: 18px;
     justify-content: center;
-    margin-top: 18px;
-    text-decoration: none;
+    align-items: center;
+    margin-top: 24px;
+    width: 100%;
 }
 
 .download-btn, .share-btn {
     display: flex;
-    text-decoration: none;
     align-items: center;
     gap: 8px;
-    background: #2c0055;
-    ;
+    background: linear-gradient(90deg, #572282 0%, #8200fc 100%);
     color: #fff;
-    border: 1px solid #ffffff4d;
-    border-radius: 6px;
-    padding: 10px 18px;
-    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    min-width: 240px;
+    height: 68px;
+    font-size: 18px;
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    box-shadow: 0 2px 8px rgba(87, 34, 130, 0.08);
-
+    box-shadow: 0 4px 16px rgba(87, 34, 130, 0.12);
+    padding: 0 28px;
+    transition: background 0.3s, transform 0.18s, box-shadow 0.18s;
+    text-decoration: none;
 }
 
 .download-btn:hover, .share-btn:hover {
     background: linear-gradient(90deg, #8200fc 0%, #572282 100%);
-    transform: translateY(2px) scale(1.04);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 18px rgba(87, 34, 130, 0.18);
+    filter: brightness(1.08);
     text-decoration: none;
 }
 
 .download-btn img, .share-btn img {
     filter: drop-shadow(0 0 2px #0002);
-    text-decoration: none;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
 }
-#download-btn:focus,/*tirando text decoration*/
-#download-btn:active,
-#download-btn {
+
+.action-buttons a:focus,
+.action-buttons a:active,
+.action-buttons a {
     outline: none;
     box-shadow: none;
     text-decoration: none;
