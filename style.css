@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #572282;
+    background: linear-gradient(90deg, rgba(87, 34, 130, 1) 0%, rgb(43, 0, 80) 50%, rgba(106, 0, 255, 1) 100%);
+    color: #000000;
+    flex-direction: column;
+    font-family: Montserrat, sans-serif;
+
+}
+
+.beauty {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.beauty h1 {
+    font-size: 65px;
+    font-weight: 700;
+
+
+}
+
+.container {
+    color: #572282;
+    height: 280px;
+    background: #fff;
+    max-width: 430px;
+    border-radius: 10px;
+    padding: 16px 25px;
+    font-family: 'Asap Condensed', sans-serif
+}
+
+.container.active {
+    height: 500px;
+    transition: all 0.3s ease;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header h1 {
+    font-weight: 600;
+}
+
+
+.container .form {
+    margin: 20px 0 25px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 65px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.form input {
+    padding: 0 15px;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid #8200fc;
+}
+
+.form button {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background: #2c0055;
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+.form button:hover {
+    background: #8200fc;
+    transform: translateY(3px);
+
+
+}
+
+.container .qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    max-height: 220px;
+
+}
+
+.qr-code img {
+    width: 200px;
+    height: 200px;
+
+}
+
+.container.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.3s ease;
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-top: 18px;
+    text-decoration: none;
+}
+
+.download-btn, .share-btn {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    gap: 8px;
+    background: #2c0055;
+    ;
+    color: #fff;
+    border: 1px solid #ffffff4d;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(87, 34, 130, 0.08);
+
+}
+
+.download-btn:hover, .share-btn:hover {
+    background: linear-gradient(90deg, #8200fc 0%, #572282 100%);
+    transform: translateY(2px) scale(1.04);
+    text-decoration: none;
+}
+
+.download-btn img, .share-btn img {
+    filter: drop-shadow(0 0 2px #0002);
+    text-decoration: none;
+}
+#download-btn:focus,/*tirando text decoration*/
+#download-btn:active,
+#download-btn {
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    border: none;
+}

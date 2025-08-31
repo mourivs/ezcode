@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>EzCode | QR Code em Segundos</title>
+  </head>
+  <body>
+    <div class="beauty">
+      <h1>EzCode</h1>
+      <p>Tenha praticidade ao gerar um qr code e exibir sua marca!</p>
+    </div>
+
+    <div class="container">
+      <header>
+        <h1>Gerador de QR Code</h1>
+      </header>
+      <div class="form">
+        <input type="text" placeholder="Digite o texto ou URL" />
+        <button>Gerar QR Code</button>
+      </div>
+      <div class="qr-code">
+        <img src="" alt="" />
+      </div>
+      <div class="action-buttons">
+  <a id="download-btn" download="qrcode.png" style="display:none;">
+    <button class="download-btn">
+      <img src="https://img.icons8.com/?size=100&id=11877&format=png&color=FFFFFF" alt="Download" width="20" height="20" />
+      Download QR Code
+    </button>
+  </a>
+  <button class="share-btn" onclick="share()">
+    <img src="https://img.icons8.com/?size=100&id=58564&format=png&color=FFFFFF" alt="Share" width="20" height="20" />
+    Compartilhar Site
+  </button>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
