@@ -140,7 +140,7 @@ header h1 {
     color: #fff;
     border: none;
     border-radius: 8px;
-    min-width: 240px;
+    width: 240px;
     height: 68px;
     font-size: 18px;
     font-family: Montserrat, sans-serif;
