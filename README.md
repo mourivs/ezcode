@@ -17,7 +17,7 @@ Bem-vindo ao **EzCode**, a solução mais prática e elegante para gerar QR Code
 2. Clique em **Gerar QR Code**.
 3. Baixe o QR Code ou compartilhe diretamente pelo botão de compartilhamento.
 
-## 🖼️ Preview
+## 🖼️ Preview (escaneie o qr code usei o site do mc como exemplo)
 
 ![Preview](https://mourivs.github.io/ezcode/preview.jpg)
 
@@ -39,4 +39,4 @@ Abra uma issue ou envie um pull request!
 
 ---
 
-> Feito com 💜 por [Gabriel Moura](https://github.com/mourivs)
+> Feito por [Gabriel Moura](https://github.com/mourivs)
