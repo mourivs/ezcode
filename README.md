@@ -39,4 +39,4 @@ Abra uma issue ou envie um pull request!
 
 ---
 
-> Feito com 💜 por [Gabriel Moura](https://github.com/mourivs)
+> Feito por [Gabriel Moura](https://github.com/mourivs)
